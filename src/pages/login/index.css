@@ -1,0 +1,78 @@
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container principal da página de login */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título da página de login */
+.login-title {
+    font-size: 2em;
+    color: #4CAF50;
+    text-align: center;
+}
+
+/* Grupos de entrada na página de login */
+.login-input-group {
+    margin: 15px 0;
+}
+
+.login-input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Botões da página de login */
+.login-button,
+.google-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover,
+.google-button:hover {
+    background-color: #414141;
+}
+
+.google-button {
+    background-color: #db4437; /* Cor do Google */
+}
+
+.google-button:hover {
+    background-color: #c13526;
+}
+/* App.css */
+input[type="email"], 
+input[type="password"] {
+  width: 380px; /* Ajuste a largura conforme necessário */
+  padding: 8px;
+  margin: 5px 0; /* Adiciona algum espaço entre os campos */
+  border: 1px solid #000000;
+  border-radius: 4px;
+}

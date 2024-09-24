@@ -1,0 +1,108 @@
+/* index.css */
+
+/* Opção 1: Usando Variáveis CSS para Tamanho do Botão */
+:root {
+    --button-padding: 10px 15px; /* Padding padrão */
+    --button-font-size: 16px; /* Tamanho da fonte padrão */
+    --input-padding: 8px; /* Padding das caixas de texto */
+    --input-font-size: 14px; /* Tamanho da fonte das caixas de texto */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.gerenciador-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+input[type="number"], input[type="text"] {
+    width: calc(100% - 20px); /* Reduzindo a largura com margem */
+    padding: var(--input-padding);
+    margin: 10px 0;
+    border: 1px solid #7a7a7a;
+    border-radius: 4px;
+    font-size: var(--input-font-size); /* Tamanho da fonte ajustado */
+}
+
+button {
+    padding: var(--button-padding);
+    font-size: var(--button-font-size);
+    color: #363636;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.despesas-container {
+    margin: 20px 0;
+}
+
+.despesas-container h2 {
+    color: red;
+}
+
+.despesas-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.despesas-container li {
+    color: red; /* Despesas em vermelho */
+    margin: 5px 0;
+}
+
+.receitas-container {
+    margin: 20px 0;
+}
+
+.receitas-container h2 {
+    color: green;
+}
+
+.receitas-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.receitas-container li {
+    color: green; /* Receitas em verde */
+    margin: 5px 0;
+}
+
+span {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Opção 2: Classes para Diferentes Tamanhos de Botões */
+.button-small {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.button-medium {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.button-large {
+    padding: 15px 20px;
+    font-size: 18px;
+}
